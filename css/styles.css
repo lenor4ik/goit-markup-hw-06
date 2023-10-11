@@ -47,9 +47,9 @@ ul {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .container {
-  width: 1158px;
+  /* width: 1158px; */
   margin: 0 auto;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 .header-navigation {
   display: flex;
@@ -193,19 +193,21 @@ ul {
 }
 
 .main-text {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .main-menu-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .main-menu-item {
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 
 .menu-icon {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 264px;
@@ -218,10 +220,11 @@ ul {
 
 .main-menu-name {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
   margin-bottom: 8px;
 }
 
@@ -229,12 +232,15 @@ ul {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 500;
   letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .main-team {
   background: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-title-item {
@@ -729,4 +735,54 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    max-width: 766px;
+  }
+
+  .main-menu-name {
+    text-align: start;
+    padding-left: 16px;
+  }
+
+  .main-menu-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .main-menu-list {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1157px) {
+  /* .container { */
+  /* max-widthe: 1752px; */
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .main-menu-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .main-menu-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .main-menu-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+  }
 }
