@@ -48,9 +48,15 @@ ul {
 }
 .container {
   /* width: 1158px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding: 0 15px; */
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .header-navigation {
   display: flex;
   align-items: center;
@@ -143,13 +149,14 @@ ul {
 
 .main {
   background: #2e2f42;
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 72px 16px 72px 16px;
   border: 1px solid #000;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -157,15 +164,27 @@ ul {
   margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mob2x.jpg);
+  }
+}
+
 .main-title {
   color: #ffffff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  margin: 0 auto 48px;
-  max-width: 496px;
+  line-height: 1.11;
+  letter-spacing: 0.03em;
+  margin: 0 auto 72px;
+  max-width: 288px;
 }
 
 .main-order-btn {
@@ -246,7 +265,7 @@ ul {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  max-width: 264px;
+  width: 264px;
 }
 
 .name-job-title {
@@ -747,9 +766,38 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 756px;
+    max-width: 768px;
+  }
+
+  .main {
+    padding: 114px 136px 112px 136px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tabl1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tabl2x.jpg);
+    }
+  }
+
+  .main-title {
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto 36px;
   }
 
   .main-menu-name {
@@ -765,6 +813,10 @@ ul {
     gap: 72px 24px;
   }
 
+  .main-team {
+    padding: 96px 108px;
+  }
+
   .team-title-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -773,6 +825,7 @@ ul {
 
   .team-title-item {
     flex-basis: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
 
   .main-work-list {
@@ -817,9 +870,36 @@ ul {
   }
 }
 
-@media screen and (min-width: 1157px) {
+@media screen and (min-width: 1158px) {
   .container {
-    max-width: 1140px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    padding: 188px 0 188px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office2x.jpg);
+    }
+  }
+
+  .main-title {
+    margin: 0 auto 48px;
   }
 
   .menu-icon {
@@ -832,6 +912,10 @@ ul {
     border-radius: 4px;
     background-color: #f4f4fd;
     margin-bottom: 8px;
+  }
+
+  .main-text {
+    padding: 120px 16px;
   }
 
   .main-menu-list {
