@@ -385,6 +385,7 @@ ul {
   overflow: hidden;
   content: "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App";
   width: 288px;
+  height: 280px;
 }
 
 .cover-text {
@@ -831,8 +832,10 @@ ul {
   .main-work-list {
     gap: 72px 24px;
   }
+
   .work-img {
     width: 356px;
+    height: 300px;
   }
 
   .footer {
