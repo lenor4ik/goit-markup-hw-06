@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html">
@@ -40,7 +40,6 @@
             </li>
           </ul>
         </nav>
-
         <address class="header-contacts">
           <ul class="header-contacts-list">
             <li class="header-contacts-item">
@@ -57,12 +56,77 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
-    <!-- <main> -->
+      <div class="mob-menu">
+        <button type="button" class="menu-close-btn">
+          <svg class="" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link- active-page link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mob-contacts-list">
+          <li class="mob-contacts-item">
+            <a class="mob-contacts-link-first link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-contacts-item">
+            <a class="mob-contacts-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-soc-list">
+          <li class="menu-soc-item">
+            <a href="https://www.instagram.com/" target="_blank" class="link">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-insta"></use></svg
+            ></a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="https://www.twitter.com/" target="_blank" class="link">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="https://www.facebook.com/" target="_blank" class="link">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="menu-soc-item">
+            <a href="https://www.linkedin.com/" target="_blank" class="link">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
       <section class="main">
         <div class="container main-text-container">
-          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <h1 class="main-title">
+            Effective Solutions <span class="big-lit">f</span>or Your Business
+          </h1>
           <button class="main-order-btn" type="button">Order Service</button>
         </div>
       </section>
@@ -127,7 +191,10 @@
           <ul class="team-title-list">
             <li class="team-title-item">
               <img
-              srcset="./images/Team-Card-1.jpg 1x, ./images/Team-Card-1-2x.jpg 2x"
+                srcset="
+                  ./images/Team-Card-1.jpg    1x,
+                  ./images/Team-Card-1-2x.jpg 2x
+                "
                 src="./images/Team-Card-1.jpg"
                 alt="Product Designer"
                 width="264"
@@ -182,7 +249,10 @@
             </li>
             <li class="team-title-item">
               <img
-              srcset="./images/Team-Card-2.jpg 1x, ./images/Team-Card-2-2x.jpg 2x"
+                srcset="
+                  ./images/Team-Card-2.jpg    1x,
+                  ./images/Team-Card-2-2x.jpg 2x
+                "
                 src="./images/Team-Card-2.jpg"
                 alt="Developer"
                 width="264"
@@ -237,7 +307,10 @@
             </li>
             <li class="team-title-item">
               <img
-              srcset="./images/Team-Card-3.jpg 1x, ./images/Team-Card-3-2x.jpg 2x"
+                srcset="
+                  ./images/Team-Card-3.jpg    1x,
+                  ./images/Team-Card-3-2x.jpg 2x
+                "
                 src="./images/Team-Card-3.jpg"
                 alt="Marketing"
                 width="264"
@@ -292,7 +365,10 @@
             </li>
             <li class="team-title-item">
               <img
-              srcset="./images/Team-Card-4.jpg 1x, ./images/Team-Card-4-2x.jpg 2x"
+                srcset="
+                  ./images/Team-Card-4.jpg    1x,
+                  ./images/Team-Card-4-2x.jpg 2x
+                "
                 src="./images/Team-Card-4.jpg"
                 alt="Designer"
                 width="264"
@@ -354,18 +430,27 @@
           <ul class="main-work-list">
             <li class="main-work-item">
               <div class="work-img">
-<picture>
-  <source
-  srcset="./images/Bank.jpg 1x, ./images/Bank-2x.jpg 2x" media="(min-width: 1158px)"
-  />
-  <source
-  srcset="./images/Bank-tab-1x.jpg 1x, ./images/Bank-tab-2x.jpg 2x" media="(min-width: 768px)"
-  />
-  <source
-  srcset="./images/Bank-mob-1x.jpg 1x, ./images/Bank-mob-2x.jpg 2x" media="(max-width: 767px)"
-  />
-  <img src="./images/Bank.jpg" alt="Banking App" width="360" />
-</picture>
+                <picture>
+                  <source
+                    srcset="./images/Bank.jpg 1x, ./images/Bank-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Bank-tab-1x.jpg 1x,
+                      ./images/Bank-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Bank-mob-1x.jpg 1x,
+                      ./images/Bank-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/Bank.jpg" alt="Banking App" width="360" />
+                </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -380,21 +465,30 @@
             <li class="main-work-item">
               <div class="work-img">
                 <picture>
-  <source
-  srcset="./images/Pay.jpg 1x, ./images/Pay-2x.jpg 2x" media="(min-width: 1158px)"
-  />
-  <source
-  srcset="./images/Pay-tab-1x.jpg 1x, ./images/Pay-tab-2x.jpg 2x" media="(min-width: 768px)"
-  />
-  <source
-  srcset="./images/Pay-mob-1x.jpg 1x, ./images/Pay-mob-2x.jpg 2x" media="(max-width: 767px)"
-  />
-                <img
-                  src="./images/Pay.jpg"
-                  alt="cashless Payment"
-                  width="360"
-                />
-              </picture>
+                  <source
+                    srcset="./images/Pay.jpg 1x, ./images/Pay-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Pay-tab-1x.jpg 1x,
+                      ./images/Pay-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Pay-mob-1x.jpg 1x,
+                      ./images/Pay-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/Pay.jpg"
+                    alt="cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -409,20 +503,32 @@
             <li class="main-work-item">
               <div class="work-img">
                 <picture>
-  <source
-  srcset="./images/Medi-app.jpg 1x, ./images/Medi-app-2x.jpg 2x" media="(min-width: 1158px)"
-  />
-  <source
-  srcset="./images/Medi-app-tab-1x.jpg 1x, ./images/Medi-app-tab-2x.jpg 2x" media="(min-width: 768px)"
-  />
-  <source
-  srcset="./images/Medi-app-mob-1x.jpg 1x, ./images/Medi-app-mob-2x.jpg 2x" media="(max-width: 767px)"
-  />
-                <img
-                  src="./images/Medi-app.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                  <source
+                    srcset="
+                      ./images/Medi-app.jpg    1x,
+                      ./images/Medi-app-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Medi-app-tab-1x.jpg 1x,
+                      ./images/Medi-app-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Medi-app-mob-1x.jpg 1x,
+                      ./images/Medi-app-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/Medi-app.jpg"
+                    alt="Meditation App"
+                    width="360"
+                  />
                 </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -438,16 +544,25 @@
             <li class="main-work-item">
               <div class="work-img">
                 <picture>
-  <source
-  srcset="./images/Taxi.jpg 1x, ./images/Taxi-2x.jpg 2x" media="(min-width: 1158px)"
-  />
-  <source
-  srcset="./images/Taxi-tab-1x.jpg 1x, ./images/Taxi-tab-2x.jpg 2x" media="(min-width: 768px)"
-  />
-  <source
-  srcset="./images/Taxi-mob-1x.jpg 1x, ./images/Taxi-mob-2x.jpg 2x" media="(max-width: 767px)"
-  />
-                <img src="./images/Taxi.jpg" alt="Taxi Service" width="360" />
+                  <source
+                    srcset="./images/Taxi.jpg 1x, ./images/Taxi-2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Taxi-tab-1x.jpg 1x,
+                      ./images/Taxi-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Taxi-mob-1x.jpg 1x,
+                      ./images/Taxi-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/Taxi.jpg" alt="Taxi Service" width="360" />
                 </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -463,20 +578,32 @@
             <li class="main-work-item">
               <div class="work-img">
                 <picture>
-  <source
-  srcset="./images/Skreen-ill.jpg 1x, ./images/Skreen-ill-2x.jpg 2x" media="(min-width: 1158px)"
-  />
-  <source
-  srcset="./images/Skreen-ill-tab-1x.jpg 1x, ./images/Skreen-ill-tab-2x.jpg 2x" media="(min-width: 768px)"
-  />
-  <source
-  srcset="./images/Skreen-ill-mob-1x.jpg 1x, ./images/Skreen-ill-mob-2x.jpg 2x" media="(max-width: 767px)"
-  />
-                <img
-                  src="./images/Skreen-ill.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+                  <source
+                    srcset="
+                      ./images/Skreen-ill.jpg    1x,
+                      ./images/Skreen-ill-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Skreen-ill-tab-1x.jpg 1x,
+                      ./images/Skreen-ill-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Skreen-ill-mob-1x.jpg 1x,
+                      ./images/Skreen-ill-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/Skreen-ill.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
                 </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -491,22 +618,34 @@
             </li>
             <li class="main-work-item">
               <div class="work-img">
-              <picture>
-  <source
-  srcset="./images/online-cours.jpg 1x, ./images/online-cours-2x.jpg 2x" media="(min-width: 1158px)"
-  />
-  <source
-  srcset="./images/online-cours-tab-1x.jpg 1x, ./images/online-cours-tab-2x.jpg 2x" media="(min-width: 768px)"
-  />
-  <source
-  srcset="./images/online-cours-mob-1x.jpg 1x, ./images/online-cours-mob-2x.jpg 2x" media="(max-width: 767px)"
-  />
-                <img
-                  src="./images/online-cours.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
-              </picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/online-cours.jpg    1x,
+                      ./images/online-cours-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-cours-tab-1x.jpg 1x,
+                      ./images/online-cours-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-cours-mob-1x.jpg 1x,
+                      ./images/online-cours-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/online-cours.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
+                </picture>
                 <p class="cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App

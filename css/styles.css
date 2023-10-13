@@ -46,6 +46,7 @@ ul {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+
 .container {
   /* width: 1158px; */
   /* margin: 0 auto; */
@@ -64,14 +65,15 @@ ul {
 
 .header-container {
   display: flex;
+  padding: 16px 16px;
 }
 .header-menu {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 
 .header-contacts-list {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 .header-logo {
@@ -88,9 +90,9 @@ ul {
 }
 
 .container .header-logo {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-right: 76px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
+  /* margin-right: 76px; */
 }
 
 .header-contacts {
@@ -147,6 +149,103 @@ ul {
   color: #404bbf;
 }
 
+.menu-open-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 24px 24px 40px 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #2E2F42;
+}
+
+.mob-menu-list {
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.03em;
+margin-bottom: 168px;
+
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-link {
+color: #2E2F42;
+}
+
+.mob-contacts-list {
+color: #434455;
+
+}
+.mob-contacts-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-contacts-item {  
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: 0.06em;
+margin-bottom: 48px;
+}
+
+.mob-contacts-link-first{
+  color: #44D5AE5;
+}
+.mob-contacts-link {
+  color: #434455;
+}
+
+.menu-soc-list {
+display: flex;
+gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-soc-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  /* width: 100%;
+  height: 100%; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.menu-soc-item .icon-soc{
+}
+
+.icon-soc {
+  fill: #f4f4fd;
+}
+
 .main {
   background: #2e2f42;
   /* padding: 188px 0; */
@@ -184,9 +283,12 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.03em;
   margin: 0 auto 72px;
-  max-width: 288px;
+  max-width: 188px;
 }
 
+.big-lit{
+text-transform: uppercase;
+}
 .main-order-btn {
   color: #ffffff;
   font-size: 16px;
@@ -323,7 +425,7 @@ ul {
   flex-direction: column;
   gap: 72px;
   justify-content: center;
-}
+}  
 
 .team-job-title {
   color: #434455;
@@ -427,7 +529,7 @@ ul {
 
 .footer {
   background: #2e2f42;
-  padding: 97px 16px;
+  padding: 97px 0;
 }
 
 .footer-cont {
@@ -578,9 +680,9 @@ ul {
 
 .modal {
   position: absolute;
-  padding: 72px 24px 24px 24px;
-  width: 408px;
-  min-height: 584px;
+  padding: 72px 16px 24px 16px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background: #fcfcfc;
   top: 50%;
@@ -772,6 +874,26 @@ ul {
     max-width: 768px;
   }
 
+  .header-container {
+    display: flex;
+    padding: 0 16px 0 16px;
+  }
+
+  .container .header-logo {
+    padding-right: 120px;
+  }
+
+  .header-menu {
+    display: flex;
+  }
+  .header-contacts-list {
+    display: block;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
   .main {
     padding: 114px 136px 112px 136px;
     background-image: linear-gradient(
@@ -792,6 +914,9 @@ ul {
         url(../images/people-office-tabl2x.jpg);
     }
   }
+.big-lit{
+text-transform: none;
+}
 
   .main-title {
     font-size: 56px;
@@ -871,6 +996,12 @@ ul {
   .input-email {
     width: 264px;
   }
+
+    .modal {
+  padding: 72px 24px 24px 24px;
+  width: 408px;
+  min-height: 584px;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -878,6 +1009,10 @@ ul {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .container .header-logo {
+    margin-right: 76px;
   }
 
   .main {
@@ -984,4 +1119,5 @@ ul {
     display: flex;
     gap: 24px;
   }
+
 }
